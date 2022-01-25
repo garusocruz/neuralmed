@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  neuralmed-cypher-base64:
+    build:
+      context: ../
+      dockerfile: .docker/cypher_base64/Dockerfile
+
+    volumes:
+      - ..:/app
+    ports:
+      - "80:5000"
+  neuralmed-pandora-box:
+    build:
+      context: ../
+      dockerfile: .docker/pandora_box/Dockerfile
+
+    volumes:
+      - ..:/app
+    ports:
+      - "5000:5000"
+    # Use this when needs to debug
+    # stdin_open: true
+    # tty: true
