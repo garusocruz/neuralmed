@@ -1,0 +1,8 @@
+coverage
+Flask==2.0.2
+google-api-core==1.26.3
+google-auth==1.28.1
+google-cloud-pubsub==2.4.1
+gunicorn
+pytest
+requests
