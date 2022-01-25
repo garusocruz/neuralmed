@@ -1,0 +1,6 @@
+coverage
+Flask==2.0.2
+gunicorn
+Pillow==9.0.0
+pytest
+requests
